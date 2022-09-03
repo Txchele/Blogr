@@ -10,12 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="icon"
       type="image/png"
@@ -28,11 +22,11 @@
   </head>
   <body>
     <header>
-      <div class="header__container">
+      <div class="header">
         <div>
-          <h3 class="header">Blogr</h3>
-          <ul class="header__elements">
-            <li class="header__element">
+          <h1>Blogr</h1>
+          <ul class="header__dropdowns">
+            <li class="dropdown">
               Product
               <span
                 ><svg
@@ -41,7 +35,45 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="header__chevron"
+                  class="chevron"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="dropdown">
+              Company
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="chevron"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="dropdown">
+              Connect
+              <span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="chevron"
                 >
                   <path
                     stroke-linecap="round"
@@ -53,11 +85,54 @@
             </li>
           </ul>
         </div>
-        <div class="header__btns">
-          <button class="login">Login</button>
-          <button class="signup">Sign Up</button>
+        <div>
+          <button class="login__btn cta">Login</button>
+          <button class="signup__btn cta">Sign Up</button>
         </div>
       </div>
+      <h1 class="hero__header">A modern publishing platform</h1>
+      <p class="hero__subheader">
+        Grow your audience and build your online brand
+      </p>
+      <div class="hero__btns">
+        <button class="signup__btn cta">Start For Free</button>
+        <button class="login__btn cta hero__btn">Learn More</button>
+      </div>
     </header>
+    <section class="features__section">
+      <h3 class="features__header">Designed for the future</h3>
+      <div class="feature__container">
+        <div class="feature">
+          <span>
+            <span>
+              <h4 class="feature__header">Introducing an extensible editor</h4>
+              <p class="feature__text">
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog
+              </p>
+            </span>
+            <span>
+              <h4 class="feature__header">Introducing an extensible editor</h4>
+              <p class="feature__text">
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog
+              </p>
+            </span>
+          </span>
+          <img
+            src="/images/illustration-editor-desktop.svg"
+            class="feature__img"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

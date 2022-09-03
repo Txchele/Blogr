@@ -9,38 +9,157 @@
   --white-text: hsl(0, 0%, 100%);
   --vlight-red: hsl(13, 100%, 72%);
   --light-red: hsl(353, 100%, 62%);
+  --cta-hover: hsl(355, 100%, 74%);
+  --dark-black: hsl(208, 49%, 24%);
 }
+button {
+  user-select: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* Hero section */
 header {
-  /* background-color: red; */
-  z-index: -1;
-  position: relative;
-  height: 100vh;
-  background: linear-gradient(to right, var(--vlight-red), var(--light-red)); 
-  border-bottom-left-radius: 6rem;
-}
-header::before {
-  z-index: -2;
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/bg-pattern-intro-desktop.svg");
-  background-size: 200%;
-  background-position: -20rem -60rem;
+  height: 80vh;
+  background: url(/images/bg-pattern-intro-desktop.svg),
+    linear-gradient(to left, var(--light-red), var(--vlight-red));
+  background-size: 150%;
+  background-position: 0 -100rem;
+  border-bottom-left-radius: 20rem;
 }
 .header {
-  font-family: 'Overpass', sans-serif;
-  color: var(--white-text);
-  font-weight: 600;
-  font-size: 2.4em;
-}
-.header__container {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 5rem;
+  padding: 6rem 20rem;
 }
-.header__btns {
+.header h1 {
+  margin-right: 6rem;
+  font-size: 4rem;
+  color: var(--white-text);
+  font-weight: 600;
+  font-family: "Overpass";
+}
+.header div {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+}
+.header__dropdowns {
+  display: flex;
+  gap: 6rem;
+}
+.header__dropdowns li {
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  color: var(--white-text);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+.chevron {
+  margin-top: 6px;
+  stroke: var(--white-text);
+  width: 2rem;
+}
+
+.cta {
+  cursor: pointer;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Overpass";
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+}
+.login__btn {
+  color: var(--white-text);
+  background: none;
+}
+.signup__btn {
+  color: var(--light-red);
+}
+.hero__header {
+  margin-top: 12rem;
+  font-size: 7rem;
+  font-weight: 700;
+  font-family: "Overpass";
+  color: var(--white-text);
+  text-align: center;
+}
+.hero__subheader {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Ubuntu";
+  color: var(--white-text);
+  text-align: center;
+}
+.hero__btns {
+  margin-top: 12rem;
+  text-align: center;
+}
+.hero__btns button {
+  padding: 1.6rem 3rem;
+}
+.hero__btn {
+  margin-left: 2rem;
+  border: 2px solid var(--white-text);
+}
+.hero__btn:hover {
+  background-color: var(--white-text);
+  color: var(--light-red);
+}
+.signup__btn:hover {
+  background-color: var(--cta-hover);
+  color: var(--white-text);
+}
+
+/* Features section */
+
+.features__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20rem;
+}
+.features__header {
+  font-weight: 600;
+  font-family: "Ubuntu";
+  font-size: 3.8rem;
+  color: var(--dark-black);
+}
+.feature {
+  display: flex;
+  margin: 8rem 30rem;
+  margin-right: 0;
+  gap: 20rem;
+}
+.feature__img {
+  position: relative;
+  transform: translateX(11%);
+  scale: 1.5;
+}
+.feature__header {
+  font-size: 3rem;
+  color: var(--dark-black);
+  font-weight: 600;
+  font-family: "Overpass";
+}
+.feature__text {
+  line-height: 1.7;
+  margin-top: 3rem;
+  font-weight: 300;
+  font-family: "Overpass";
+  font-size: 1.8rem;
+}
+.feature span {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
 }
